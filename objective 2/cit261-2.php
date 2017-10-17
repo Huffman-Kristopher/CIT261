@@ -24,7 +24,7 @@ home page
 	<pre id="carData"></pre>
   </div>
 
-	
+	<footer>
                 <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
                 
                 <script src="/modules/analytics.js"></script>
