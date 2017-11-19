@@ -94,7 +94,7 @@ function animationIter(event) {
 }
 
 function getAnimationEnd(event) {
-	document.getElementById("pAnimation").innerHTML += "<br>Animation has ended.";
+	document.getElementById("pAnimation").innerHTML = "<br>Animation has ended.";
 }
  
 	 </script>
