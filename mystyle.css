@@ -1,0 +1,500 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  font-family: sans-serif; /* 1 */
+}
+body,td,th {
+	font-size: medium;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 10%;
+	background-color: #7788AA;	
+}
+img.intsldpic{
+	height:200px;
+	width:200px;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+progress {
+  vertical-align: baseline;
+}
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+button,
+input,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+textarea {
+  overflow: auto;
+}
+.newA {
+	text-align:center;
+}
+
+.td {
+	vertical-align:top;
+}
+.table {
+	width: 100%;
+}
+.prsnt {
+	text-align:center;
+}
+ /* Slideshow container */
+.slideshow-container {
+	width: 25%;
+	height: 25%;
+	position: absolute;
+	margin-bottom: 10%;
+	z-index: 1;
+	float: left;
+	padding: 10px;	
+  
+}
+.descripto{
+	width: 50%;
+	height: 25%;
+	position: static;
+	margin-bottom: 10%;
+	float: right;
+}
+.hdng{ text-align:center;
+}
+.descript{
+	width: 25%;
+	height: 25%;
+	position: relative;
+	margin: 25px;
+	margin-top: 2px;
+	margin-left: 15px;
+	margin-bottom: 235px;
+	float: right;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #152B55;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+	color: #993300;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+
+.numbertext {
+	color: #152B55;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: inherit;
+	top: 135px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 5px;
+	width: 5px;
+	position: relative;
+	margin-right:inherit;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: block;
+	z-index: 2;
+	transition: background-color 0.6s ease;  
+}
+
+.active, .dot:hover {
+  background-color: #AC5839;
+}
+
+/* Fading animation */
+.fade {
+  
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+body,td,th {
+	font-size: small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin-top: 1%;
+	margin-bottom: 10%;
+	background-color: white;
+	padding-top:1%;
+	text-align:center;
+	background-color: #7788AA;
+}
+header {
+	position: relative;
+	}
+
+#menu-icon {
+
+		display:inline-block;
+
+	}
+
+ul { 
+		
+		position: relative;
+		padding: 1%;
+		background: #fff;
+		border: 5px solid #444;
+		margin-right: 20px;
+		margin-top: 1%;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+		
+	}
+li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+li a, .dropbtn {
+    display:inline-block;
+    color: #378B2E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	width:100%;
+}
+li.dropdown {
+    display:block;
+}
+
+.dropdown-content {
+	display: none;
+	position: relative;
+	background-color: #152B55;
+	min-width: 15%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #378B2E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+hover ul {
+
+		display: block;
+
+	}
+.intslds{
+	float: none;
+	padding-bottom: 45%;
+	visibility:hidden;
+}
+.descripto{
+	width: 50%;
+	height: 25%;
+	position: absolute;
+	padding-top: 5%;
+	padding-left:30%;
+	text-align: center;
+}
+.numbertext {
+	color: #152B55;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: static;
+	visibility:hidden;
+	}
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #152B55;
+	position: relative;
+	margin-top: 1%;
+	width: 100%;
+	z-index: 3;
+}
+
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: #378B2E;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #AC5839;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: #152B55;
+	min-width: 15%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #378B2E;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #AC5839}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ol.b {
+	list-style-type: none;
+	margin: 0;
+	padding-top: 0%;
+	overflow: hidden;
+	background-color: #152B55;
+	position: relative;
+	margin-top: 1%;
+	width: 96%;
+	z-index: 3;
+}
+
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: #378B2E ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #552500;
+}
+
+.active {
+    background-color: #AC5839;
+}
+
+.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 25%;
+}
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+.descrpt {    
+	float:right;
+	
+}
+.intslds{
+	float:left;
+	
+}
+.introslds{
+	margin-bottom:50%;
+	padding-bottom: 35%;
+	margin-top:0%;
+	height: 100%;
+	width:100%;
+	
+}
+.example {
+    width: 500px;
+    height: 50px;
+    background: red;
+}
+.example2 {
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+.example3 {
+    width: 100%;
+    height: 300px;
+    background: red;
+}
+
+.trigger {
+  width: 50px;
+  height: 50px;
+  background: red;
+  transition: width 10s, height 5s;
+}
+
+.triggerEnlarge {
+  width: 800px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.triggerSmall {
+  width: 20px;
+  height: 20px;
+  border-radius: 0%;
+}
+
+.animation2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  animation-name: colorChange2;
+  animation-duration: 5s;
+  animation-iteration-count: 10; 
+}
+@keyframes colorChange2 {
+  0% {background-color: black;}
+  25% {background-color: gray;}
+  50% {background-color: white;}
+  75% {background-color: gray;}
+  100% {background-color: black;}
+}
