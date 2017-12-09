@@ -48,53 +48,52 @@ body {
 }
 
 #window {
-  text-align:center;
   border-radius: 85%/15%;
+  justify-content: center;
+  align-items: center;
   position:absolute;
   padding:10px 20px;
   top:30px;
   left:10px;
   width:440px;
   height:280px;
-  background:#464646;
+  background:#333;
   box-shadow:-1px -1px #b4b4b5,
     1px 1px #fff;
   font-size:28px;
   color:#5fbb46;
   content:'';
   text-shadow:none;
-   transition: border-radius .5s ease, 
+  transition: border-radius .5s ease, 
                 background-color .5s ease, 
                 transform .5s ease .5s;
-  animation: morphing-square 3s linear infinite;
+  animation: morphing-circle-square 3s linear infinite;
 }
 
-}
-@keyframes morphing-square {
-    0% {border-radius: 85%/15%;
-	    background-color: grey;}
-    25% {
-        border-radius: 85%/15%;
-        background-color: dark grey;
+@keyframes morphing-circle-square {
+    0% {border-radius:  85%/15%;
+	 background-color:#333;
+	 }
+    25% { 
+        border-radius:  85%/15%;
+        background-color: #333;
 		transform:scaleX(1.02);
     }
     50% { 
         border-radius: 0%;
         background-color: black;
-        transform:scaleX(1.04);
+		transform:scaleX(1.04);   
     }
     75% { 
         border-radius: 0%;
         background-color: black;
-        transform:scaleX(1.02);   
+		transform:scaleX(1.04);     
     }
     100% { 
-        border-radius: 85%/15%;
-        background-color: dark grey;
-        transform:none);
+        border-radius:  85%/15%;
+        background-color: #333;
+		transform:scaleX(1.02);  
     }
-	
-	
 }
 
 #header {
@@ -108,6 +107,8 @@ body {
 
 #header:before {
   position:absolute;
+  justify-content: center;
+  text-align:center;
   top:6px;
   left:30px;
   width:175px;
@@ -128,6 +129,7 @@ body {
 
 #topbar {
   position:relative;
+  text-align:center;
   width:100vw;
   height:30px;
   background:#d7d7d7;
@@ -143,7 +145,7 @@ body {
 #topbar:before {
   float:right;
   margin-right:15px;
-  content:'13:37';
+  content:'By Kris Huffman';
 }
 
 #charName, #clear {
@@ -161,4 +163,213 @@ cursor {
   49% {opacity:1;}
   50% {opacity:0;}
   100% {opacity:0;}
+}
+#div1 {
+  position:absolute;
+  top:15px;
+  left:15px;
+  margin:0 auto;
+  padding: 15px 15px 15px 15px;
+  width:120px;
+  height:185px;
+  background:#d7d7d7;
+  border-radius:2px;
+  border:1px solid #222;
+  box-shadow:1px 1px #222,
+    inset 1px 1px #fff;
+  text-shadow:0 1px #ededed;
+}
+
+#div1:before {
+  position:absolute;
+  top:6px;
+  left:6px;
+  width:16px;
+  height:16px;
+  background:linear-gradient(135deg, #b1b1b1, #d7d7d7);
+  border:1px solid #222;
+  box-shadow:inset 1px 1px #fff,
+    1px 1px #fff;
+  content:'';
+}
+
+#div1:after {
+  position:absolute;
+  top:6px;
+  left:125px;
+  width:16px;
+  height:16px;
+  background:linear-gradient(135deg, #b1b1b1, #d7d7d7);
+  border:1px solid #222;
+  box-shadow:inset 1px 1px #fff,
+    1px 1px #fff;
+  content:'';
+}
+#window2 {
+  border-radius: 85%/15%;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  padding:10px 20px;
+  top:30px;
+  left:1px;
+  width:108px;
+  height:auto;
+  background: black;
+  box-shadow:-1px -1px #b4b4b5,
+    1px 1px #fff;
+  font-size:12px;
+  color:#5fbb46;
+  content:'';
+  text-shadow:none;
+}
+  #header2 {
+  display:flex;
+  color:#222;
+  text-align:center;
+  line-height:28px;
+  font-size:20px;
+  justify-content:center;
+}
+
+#header2:before {
+  position:absolute;
+  justify-content: center;
+  text-align:center;
+  top:6px;
+  left:30px;
+  width:45px;
+  height:1px;
+  background:#ebebeb;
+  box-shadow:0 1px #b7b7b8,
+    0 4px #ebebeb, 0 5px #b7b7b8,
+    0 8px #ebebeb, 0 9px #b7b7b8,
+    0 12px #ebebeb, 0 13px #b7b7b8,
+    0 16px #ebebeb, 0 17px #b7b7b8,
+    45px 0px #ebebeb, 45px 1px #b7b7b8,
+    45px 4px #ebebeb, 45px 5px #b7b7b8,
+    45px 8px #ebebeb, 45px 9px #b7b7b8,
+    45px 12px #ebebeb, 45px 13px #b7b7b8,
+    45px 16px #ebebeb, 45px 17px #b7b7b8;
+  content:'';
+}
+#doc {
+  position:absolute;
+  top:550px;
+  left:45px;
+  margin:0 auto;
+  padding: 15px 15px 15px 15px;
+  width:220px;
+  height:85px;
+  background:#d7d7d7;
+  border-radius:2px;
+  border:1px solid #222;
+  box-shadow:1px 1px #222,
+    inset 1px 1px #fff;
+  text-shadow:0 1px #ededed;
+}
+
+#doc:before {
+  position:absolute;
+  top:6px;
+  left:6px;
+  width:16px;
+  height:16px;
+  background:linear-gradient(135deg, #b1b1b1, #d7d7d7);
+  border:1px solid #222;
+  box-shadow:inset 1px 1px #fff,
+    1px 1px #fff;
+  content:'';
+}
+
+#doc:after {
+  position:absolute;
+  top:6px;
+  left:225px;
+  width:16px;
+  height:16px;
+  background:linear-gradient(135deg, #b1b1b1, #d7d7d7);
+  border:1px solid #222;
+  box-shadow:inset 1px 1px #fff,
+    1px 1px #fff;
+  content:'';
+}
+#window3 {
+  border-radius: 85%/15%;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  padding:10px 20px;
+  top:30px;
+  left:1px;
+  width:208px;
+  height:auto;
+  background: black;
+  box-shadow:-1px -1px #b4b4b5,
+    1px 1px #fff;
+  font-size:12px;
+  color:#5fbb46;
+  content:'';
+  text-shadow:none;
+}
+  #header3 {
+  display:flex;
+  color:#222;
+  text-align:center;
+  line-height:28px;
+  font-size:20px;
+  justify-content:center;
+}
+
+#header3:before {
+  position:absolute;
+  justify-content: center;
+  text-align:center;
+  top:6px;
+  left:30px;
+  width:90px;
+  height:1px;
+  background:#ebebeb;
+  box-shadow:0 1px #b7b7b8,
+    0 4px #ebebeb, 0 5px #b7b7b8,
+    0 8px #ebebeb, 0 9px #b7b7b8,
+    0 12px #ebebeb, 0 13px #b7b7b8,
+    0 16px #ebebeb, 0 17px #b7b7b8,
+    100px 0px #ebebeb, 100px 1px #b7b7b8,
+    100px 4px #ebebeb, 100px 5px #b7b7b8,
+    100px 8px #ebebeb, 100px 9px #b7b7b8,
+    100px 12px #ebebeb, 100px 13px #b7b7b8,
+    100px 16px #ebebeb, 100px 17px #b7b7b8;
+  content:'';
+}
+#button {
+transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+  animation: morphing-circle-square2 5s linear infinite;	
+}
+@keyframes morphing-circle-square2 {
+    0% {border-radius:  75%/25%;
+	 background-color:#333;
+	 }
+    25% { 
+        border-radius:  75%/25%;
+        background-color: #333;
+		
+    }
+    50% { 
+        border-radius: 0%;
+        background-color: #333;
+		   
+    }
+    75% { 
+        border-radius: 0%;
+        background-color: #333;
+		     
+    }
+    100% { 
+        border-radius:  75%/25%;
+        background-color: #333;
+		  
+    }
 }

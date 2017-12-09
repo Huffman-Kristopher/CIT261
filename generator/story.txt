@@ -1,0 +1,27 @@
+document.onkeypress = function (e) {
+    e = e || window.event;
+    if (e.keyCode == 13) {
+      if (!charNameVisible) {
+        charNameVisible = 1;
+        var charName = getcharName();
+        document.getElementById("window").getElementsByTagName("cursor")[0].innerHTML = "";
+        document.getElementById("charName").innerHTML = charName;
+        document.getElementById("charName").style.opacity = 1;
+        document.getElementById("clear").style.opacity = 1;
+      } else {
+        charNameVisible = 0;
+        document.getElementById("charName").style.opacity = 0;
+        document.getElementById("clear").style.opacity = 0;
+        document.getElementById("window").getElementsByTagName("cursor")[0].innerHTML = "_";
+      }
+    }
+};
+
+function getcharName() {
+	var firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+	var secondName = secondNames[Math.floor(Math.random() * secondNames.length)];
+	var occName = occNames[Math.floor(Math.random() * occNames.length)];
+	var adjs = adj[Math.floor(Math.random() * adj.length)];
+	var hairc = hair[Math.floor(Math.random() * hair.length)];
+	return "Your Character " + firstName + " " + secondName + " is a " + adjs + " " + occName + " with " + hairc + " hair.";
+}

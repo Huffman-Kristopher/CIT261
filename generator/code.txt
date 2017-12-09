@@ -1,0 +1,9 @@
+firstNames = ["John", "Frasier", "Jennifer", "April", "Victor", "Steph", "Conner", "Landon", "Laif", "Gabby", "Ivy", "Tony", "Akatika"];
+********************************
+secondNames = ["Sanderson", "Johnson", "Smith", "Taylor", "Thorsson", "Huffman", "Gunderson", "Marion", "Malikihana"];
+********************************
+occNames = ["Black Smith", "Horse Trainer", "Shop Keeper", "Bartender", "Mercenary", "Guard", "Leather Worker", "Farier", "Butcher"];
+********************************
+adj = ["Thin", "Frail", "Fat", "Willowy", "Strong", "Nimble", "Lithe", "Bulky", "Delicate"];
+********************************
+hair = ["Black", "Red", "Blonde", "Sandy", "Brown", "No", "Grey", "White", "Purple"];
