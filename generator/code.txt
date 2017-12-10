@@ -1,9 +1,15 @@
-firstNames = ["John", "Frasier", "Jennifer", "April", "Victor", "Steph", "Conner", "Landon", "Laif", "Gabby", "Ivy", "Tony", "Akatika"];
 ********************************
-secondNames = ["Sanderson", "Johnson", "Smith", "Taylor", "Thorsson", "Huffman", "Gunderson", "Marion", "Malikihana"];
+*********** Instructions ***********
 ********************************
-occNames = ["Black Smith", "Horse Trainer", "Shop Keeper", "Bartender", "Mercenary", "Guard", "Leather Worker", "Farier", "Butcher"];
+*********** Generation ***********
 ********************************
-adj = ["Thin", "Frail", "Fat", "Willowy", "Strong", "Nimble", "Lithe", "Bulky", "Delicate"];
+To Generate a Random 
+Character Press 
+The Enter Key.           
+******************************** 
+************ Deletion ************
+********************************                        
+To Clear the Character 
+and Start Over Press  
+Enter Again.           
 ********************************
-hair = ["Black", "Red", "Blonde", "Sandy", "Brown", "No", "Grey", "White", "Purple"];

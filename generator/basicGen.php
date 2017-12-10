@@ -63,9 +63,9 @@ function doc() {
 <div id="generator">
 <div id="header">
   </div>
-  <div id="window">Press &lt;ENTER&gt; to generate your Character<cursor>_</cursor><br><br>
+  <div id="window"><cursor>_</cursor><br><br>
     <div id="charName">Character</div>
-    <div id="clear"><br>Press &lt;ENTER&gt; again to clear</div>
+    <div id="clear"><br></div>
   </div>
 </div>
 <div id="div1">
@@ -78,7 +78,7 @@ function doc() {
 <div id="header3">
 </div>
 <div id="window3"><br>
-<button type="button" id="button" onClick="doc()"> Show Arrays </button>
+<button type="button" id="button" onClick="doc()"> Instructions </button>
 </div>
 </div>
 

@@ -4,7 +4,7 @@
 body {
   margin:0;
   font-family: 'VT323', ;
-  background:url('https://i.makeagif.com/media/7-30-2015/YSBwR6.gif');
+  background:url('/desktop.jpg');
 }
 
 #generator {
@@ -166,12 +166,12 @@ cursor {
 }
 #div1 {
   position:absolute;
-  top:15px;
-  left:15px;
+  top:50px;
+  left:120px;
   margin:0 auto;
   padding: 15px 15px 15px 15px;
   width:120px;
-  height:185px;
+  height:175px;
   background:#d7d7d7;
   border-radius:2px;
   border:1px solid #222;
@@ -255,12 +255,12 @@ cursor {
 }
 #doc {
   position:absolute;
-  top:550px;
+  top:350px;
   left:45px;
   margin:0 auto;
   padding: 15px 15px 15px 15px;
-  width:220px;
-  height:85px;
+  width:215px;
+  height:245px;
   background:#d7d7d7;
   border-radius:2px;
   border:1px solid #222;
@@ -302,8 +302,8 @@ cursor {
   padding:10px 20px;
   top:30px;
   left:1px;
-  width:208px;
-  height:auto;
+  width:200px;
+  height:220px;
   background: black;
   box-shadow:-1px -1px #b4b4b5,
     1px 1px #fff;
@@ -343,7 +343,8 @@ cursor {
   content:'';
 }
 #button {
-transition: border-radius .5s ease, 
+	margin-left:60px;
+	transition: border-radius .5s ease, 
                 background-color .5s ease, 
                 transform .5s ease .5s;
   animation: morphing-circle-square2 5s linear infinite;	
